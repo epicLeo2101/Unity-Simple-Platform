@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
             theRB.velocity = new Vector3(theRB.velocity.x, jumpForce, theRB.velocity.z);
         }*/
 
-        moveDirection = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, moveDirection.y, Input.GetAxis("Vertical") * moveSpeed);
+        moveDirection = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, moveDirection.y, 0); //Input.GetAxis("Vertical") * moveSpeed
 
         if (controller.isGrounded)
         {
